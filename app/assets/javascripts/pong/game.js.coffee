@@ -55,7 +55,6 @@ class Pong.Game
 
       if @withinRectangle(@ball, paddle)
         @ball.angle += 180
-        console.log "Paddle collision"
 
     if @ball.y > @gfxEngine.screenBounds.height || @ball.y <= 0
       @ball.collide()
@@ -68,8 +67,6 @@ class Pong.Game
       @score[1] += 1
       @throwBall()
 
-    #TODO: Check wall collisions / score
-    #
   withinRectangle: (thing, rectangle) ->
     if thing.x + thing.w >= rectangle.x  and thing.x <= (rectangle.x + rectangle.w) and thing.y + thing.h >= rectangle.y and thing.y <= (rectangle.y + rectangle.h)
       return true

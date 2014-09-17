@@ -11,7 +11,7 @@ class Pong.Paddle
       @x -= (@game.gfxEngine.screenBounds.width / 30) * 2
 
     @w = @game.gfxEngine.screenBounds.width / 30
-    @h = @game.gfxEngine.screenBounds.height / 3
+    @h = @game.gfxEngine.screenBounds.height / 5
 
     @y = @game.gfxEngine.centerVertically(@h)
 
